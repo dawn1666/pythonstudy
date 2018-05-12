@@ -15,7 +15,6 @@ url=requests.get('https://movie.douban.com/subject/26683723/comments?sort=new_sc
 #print(url)
 s=etree.HTML(url)
 file=s.xpath('//*[@id="comments"]/div/div[2]/p/text()')
-
 import pandas as pd
 fd= pd.DataFrame(file)
 fd.to_csv('pdas4.csv')
