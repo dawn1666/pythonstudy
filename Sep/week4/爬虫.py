@@ -18,3 +18,4 @@ file=s.xpath('//*[@id="comments"]/div/div[2]/p/text()')
 import pandas as pd
 fd= pd.DataFrame(file)
 fd.to_csv('pdas4.csv')
+
